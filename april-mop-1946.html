@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>April Mop 1946: Ketika Candaan Berubah Menjadi Bencana Nyata di Hawaii</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1208;
+      --paper: #f5f0e8;
+      --cream: #ede8db;
+      --accent: #8b2500;
+      --accent-light: #c94a1a;
+      --gold: #b8860b;
+      --muted: #6b5d4f;
+      --rule: #c8b89a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      background: var(--ink);
+      color: var(--paper);
+      text-align: center;
+      padding: 1rem 2rem 0.8rem;
+      letter-spacing: 0.25em;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .masthead span {
+      opacity: 0.45;
+      margin: 0 1rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(139,37,0,0.35) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-kicker {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 1.5rem;
+      opacity: 0.9;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 820px;
+      margin: 0 auto 1.8rem;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #e8c9a0;
+    }
+    .hero-deck {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 300;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      opacity: 0.75;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.45;
+    }
+    .hero-meta::before,
+    .hero-meta::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.4;
+    }
+
+    /* ── RULE ── */
+    .rule {
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0 auto;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--cream);
+      border-top: 3px solid var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding: 2rem;
+    }
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .stat-item {}
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+      display: block;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.35rem;
+      display: block;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      padding: 3.5rem 2rem 4rem;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      margin-bottom: 1.6rem;
+      color: var(--ink);
+    }
+
+    .dropcap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      font-weight: 900;
+      float: left;
+      line-height: 0.78;
+      margin: 0.1em 0.1em 0 0;
+      color: var(--accent);
+    }
+
+    /* ── SECTION HEADING ── */
+    .section-head {
+      margin: 3rem 0 1.4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+    .section-head h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    /* ── PULLQUOTE ── */
+    .pullquote {
+      margin: 2.5rem -1rem;
+      padding: 2rem 2rem 2rem 2.5rem;
+      border-left: 4px solid var(--accent);
+      background: var(--cream);
+    }
+    .pullquote p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem !important;
+      font-style: italic;
+      line-height: 1.5 !important;
+      color: var(--ink);
+      margin-bottom: 0.6rem !important;
+    }
+    .pullquote cite {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-style: normal;
+    }
+
+    /* ── CALLOUT BOX ── */
+    .callout {
+      margin: 2.5rem 0;
+      padding: 1.8rem 2rem;
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .callout-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 0.8rem;
+    }
+    .callout p {
+      font-size: 0.95rem !important;
+      line-height: 1.75 !important;
+      color: rgba(245,240,232,0.85);
+      margin-bottom: 0 !important;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline {
+      margin: 2.5rem 0;
+      padding: 0;
+      list-style: none;
+      border-left: 2px solid var(--rule);
+      padding-left: 2rem;
+    }
+    .timeline li {
+      position: relative;
+      margin-bottom: 1.4rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -2.5rem;
+      top: 0.4rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-time {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: rgba(245,240,232,0.4);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+    footer a {
+      color: rgba(245,240,232,0.55);
+      text-decoration: none;
+    }
+    footer strong {
+      color: rgba(245,240,232,0.7);
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid { gap: 1.5rem; }
+      .pullquote { margin: 2rem 0; }
+    }
+
+    /* ── WAVE ANIMATION (hero bottom) ── */
+    .wave-divider {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      background: var(--ink);
+    }
+    .wave-divider svg {
+      display: block;
+      width: 100%;
+    }
+
+    /* ── ANIMATED OCEAN STRIP ── */
+    .ocean-strip {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(to bottom, #0a1f3a 0%, #0d2e52 100%);
+    }
+    .wave-layer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+    }
+    .wave-layer path {
+      fill-opacity: 0.6;
+    }
+    .wave-layer.w1 { animation: waveMove 7s linear infinite; }
+    .wave-layer.w2 { animation: waveMove 11s linear infinite reverse; opacity: 0.5; }
+    .wave-layer.w3 { animation: waveMove 5s linear infinite; opacity: 0.3; }
+
+    @keyframes waveMove {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── STATS ICONS ── */
+    .stat-icon {
+      display: block;
+      margin: 0 auto 0.5rem;
+      width: 36px;
+      height: 36px;
+      opacity: 0.7;
+    }
+
+    /* ── TIMELINE REDESIGN WITH ICONS ── */
+    .timeline {
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+      border-left: none;
+    }
+    .timeline li {
+      position: relative;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      padding: 1.2rem 1.2rem 1.2rem 4.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      min-height: 80px;
+      transition: background 0.2s;
+    }
+    .timeline li:last-child { border-bottom: none; }
+    .timeline li:hover { background: rgba(255,255,255,0.04); }
+    .timeline li::before { display: none; } /* remove old dot */
+
+    .tl-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      background: rgba(201,74,26,0.25);
+      border: 1px solid rgba(201,74,26,0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .tl-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ── ANIMATED WAVE IN CALLOUT HEADER ── */
+    .callout-wave-header {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0a1f3a 0%, #0d2e52 60%, #1a0a08 100%);
+      padding: 1.5rem 1.5rem 0;
+      margin: -1.8rem -2rem 0;
+      min-height: 70px;
+    }
+    .callout-wave-header .callout-title {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 0;
+      padding-bottom: 1rem;
+    }
+    .mini-waves {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 28px;
+      overflow: hidden;
+    }
+    .mini-waves svg {
+      width: 200%;
+      height: 100%;
+      animation: waveMove 6s linear infinite;
+    }
+
+    /* ── FLOATING PARTICLES in hero ── */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(200,184,154,0.15);
+      animation: floatUp linear infinite;
+    }
+    @keyframes floatUp {
+      0%   { transform: translateY(100%) scale(0.5); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 0.3; }
+      100% { transform: translateY(-120%) scale(1.2); opacity: 0; }
+    }
+
+    /* ── ANIMATED WAVE BOTTOM OF HERO ── */
+    @keyframes wavePulse {
+      0%, 100% { d: path("M0,30 C200,10 400,50 600,30 C800,10 1000,50 1200,30 L1200,60 L0,60 Z"); }
+      50%       { d: path("M0,40 C200,60 400,20 600,40 C800,60 1000,20 1200,40 L1200,60 L0,60 Z"); }
+    }
+
+    /* ── SECTION ICON ── */
+    .section-head {
+      margin: 3rem 0 1.4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+    .section-head .sh-icon {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      margin-top: 0.2rem;
+      opacity: 0.55;
+    }
+    .section-head h2 { flex: 1; }
+
+    /* ── WAVE SEPARATOR ── */
+    .wave-sep {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      margin: 0;
+    }
+    .wave-sep svg { display: block; }
+
+    /* ── FOOTER WAVE ── */
+    .footer-wave {
+      background: var(--paper);
+      overflow: hidden;
+      line-height: 0;
+    }
+    .footer-wave svg { display: block; }
+
+    /* ── ENTRANCE ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.7s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="masthead">
+    Sejarah &amp; Sains <span>·</span> Edisi Khusus <span>·</span> 1 April 1946
+  </div>
+
+  <section class="hero">
+    <div class="hero-particles">
+      <div class="particle" style="width:6px;height:6px;left:10%;animation-duration:12s;animation-delay:0s;"></div>
+      <div class="particle" style="width:4px;height:4px;left:25%;animation-duration:9s;animation-delay:2s;"></div>
+      <div class="particle" style="width:8px;height:8px;left:40%;animation-duration:14s;animation-delay:4s;"></div>
+      <div class="particle" style="width:5px;height:5px;left:60%;animation-duration:10s;animation-delay:1s;"></div>
+      <div class="particle" style="width:3px;height:3px;left:75%;animation-duration:8s;animation-delay:3s;"></div>
+      <div class="particle" style="width:7px;height:7px;left:88%;animation-duration:11s;animation-delay:5s;"></div>
+    </div>
+    <div class="hero-kicker">Tsunami Terburuk dalam Sejarah Modern Hawaii</div>
+    <h1>April Mop 1946:<br><em>Ketika Candaan Berubah<br>Menjadi Bencana Nyata</em></h1>
+    <p class="hero-deck">Pagi itu di Hawaii, peringatan tsunami dikira lelucon. Tidak ada yang tertawa sesudahnya.</p>
+    <div class="hero-meta">
+      <span>1 April 1946</span>
+      <span>Kepulauan Aleutian · Hawaii</span>
+    </div>
+  </section>
+
+  <!-- ANIMATED WAVE DIVIDER -->
+  <div class="ocean-strip">
+    <svg class="wave-layer w1" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C120,50 240,10 360,30 C480,50 600,10 720,30 C840,50 960,10 1080,30 C1200,50 1320,10 1440,30 L1440,60 L0,60 Z" fill="#1a4a7a"/>
+    </svg>
+    <svg class="wave-layer w2" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;bottom:0;left:0;width:200%;height:100%;">
+      <path d="M0,20 C180,40 360,0 540,20 C720,40 900,0 1080,20 C1260,40 1440,0 1620,20 L1620,60 L0,60 Z" fill="#2a6aa0"/>
+    </svg>
+    <svg class="wave-layer w3" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;bottom:0;left:0;width:200%;height:100%;">
+      <path d="M0,40 C90,20 180,55 270,40 C360,25 450,55 540,40 C630,25 720,55 810,40 C900,25 990,55 1080,40 C1170,25 1260,55 1350,40 C1440,25 1530,55 1620,40 L1620,60 L0,60 Z" fill="#8b2500" style="fill-opacity:0.4;"/>
+    </svg>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <!-- seismic/earthquake icon -->
+        <svg class="stat-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="16" stroke="#8b2500" stroke-width="1.5" fill="none" opacity="0.3"/>
+          <polyline points="4,18 8,18 11,10 14,26 17,14 20,22 23,18 28,18 32,18" stroke="#8b2500" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="stat-num">M 8,6</span>
+        <span class="stat-label">Magnitudo Gempa</span>
+      </div>
+      <div class="stat-item">
+        <!-- skull/casualties icon -->
+        <svg class="stat-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 4 C10,4 6,9 6,16 C6,20 8,23 12,25 L12,30 L24,30 L24,25 C28,23 30,20 30,16 C30,9 26,4 18,4 Z" stroke="#8b2500" stroke-width="1.5" fill="none"/>
+          <circle cx="13" cy="16" r="2.5" fill="#8b2500" opacity="0.7"/>
+          <circle cx="23" cy="16" r="2.5" fill="#8b2500" opacity="0.7"/>
+          <line x1="15" y1="30" x2="15" y2="25" stroke="#8b2500" stroke-width="1.5"/>
+          <line x1="21" y1="30" x2="21" y2="25" stroke="#8b2500" stroke-width="1.5"/>
+        </svg>
+        <span class="stat-num">165–173</span>
+        <span class="stat-label">Korban Jiwa</span>
+      </div>
+      <div class="stat-item">
+        <!-- wave height icon -->
+        <svg class="stat-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4,28 C8,22 12,32 16,26 C20,20 24,30 28,24 C30,21 32,22 32,22" stroke="#8b2500" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M4,20 C8,14 12,24 16,18 C20,12 24,22 28,16 C30,13 32,14 32,14" stroke="#8b2500" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <line x1="4" y1="6" x2="4" y2="32" stroke="#8b2500" stroke-width="1.5" opacity="0.4"/>
+          <polyline points="2,8 4,5 6,8" stroke="#8b2500" stroke-width="1.5" fill="none" stroke-linejoin="round" opacity="0.4"/>
+        </svg>
+        <span class="stat-num">42 m</span>
+        <span class="stat-label">Tinggi Gelombang Tertinggi</span>
+      </div>
+      <div class="stat-item">
+        <!-- damage/money icon -->
+        <svg class="stat-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="28" height="18" rx="2" stroke="#8b2500" stroke-width="1.5" fill="none"/>
+          <circle cx="18" cy="19" r="5" stroke="#8b2500" stroke-width="1.5" fill="none"/>
+          <line x1="18" y1="14" x2="18" y2="10" stroke="#8b2500" stroke-width="1.5" opacity="0.4"/>
+          <line x1="18" y1="24" x2="18" y2="28" stroke="#8b2500" stroke-width="1.5" opacity="0.4"/>
+          <text x="15.5" y="22" font-size="7" fill="#8b2500" font-family="serif" font-weight="bold">$</text>
+        </svg>
+        <span class="stat-num">$26 Jt</span>
+        <span class="stat-label">Kerugian Materi (nilai 1946)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="article-body">
+
+    <p class="dropcap">Pukul 02.29 dini hari, 1 April 1946. Di kedalaman 15 kilometer di bawah dasar Samudra Pasifik bagian utara, dekat Kepulauan Aleutian Alaska, sebuah patahan besar bergeser. Gempa berkekuatan momen 8,6 mengguncang — salah satu yang terkuat di abad itu. Namun di daratan, guncangan yang terasa hanya sekitar intensitas VI (Kuat) pada skala Mercalli. Banyak yang tidur kembali. Tidak ada yang tahu bahwa dasar laut baru saja terangkat, memindahkan jutaan ton air laut, dan meluncurkan dinding gelombang yang melintasi Pasifik dengan kecepatan 800 kilometer per jam.</p>
+
+    <p>Inilah awal dari bencana yang kemudian dikenal di seluruh dunia dengan nama yang terdengar ringan namun menyimpan ironi gelap: <strong>Tsunami April Mop</strong>.</p>
+
+    <div class="section-head">
+      <svg class="sh-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="9" y="10" width="6" height="12" rx="1" stroke="#8b2500" stroke-width="1.5" fill="none"/>
+        <polygon points="8,10 12,3 16,10" stroke="#8b2500" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        <line x1="6" y1="22" x2="18" y2="22" stroke="#8b2500" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="5" y1="8" x2="8" y2="9.5" stroke="#8b2500" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+        <line x1="19" y1="8" x2="16" y2="9.5" stroke="#8b2500" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+      <h2>Mercusuar yang Tak Sempat Memperingatkan Siapapun</h2>
+    </div>
+
+    <p>Pukulan pertama jatuh di Pulau Unimak, Alaska — hanya beberapa menit setelah gempa. Mercusuar Scotch Cap, sebuah bangunan beton bertulang baja yang berdiri kokoh 27 meter di atas permukaan laut, dihantam gelombang setinggi lebih dari 42 meter. Bangunan itu hancur seketika. Lima penjaga mercusuar yang bertugas di dalamnya tewas semuanya — mereka bahkan tidak sempat mengirim sinyal peringatan.</p>
+
+    <p>Hilangnya Scotch Cap adalah fakta krusial yang sering luput dari narasi populer. Mercusuar itu seharusnya menjadi titik peringatan pertama bagi pulau-pulau di selatan. Dengan hancurnya stasiun tersebut, Hawaii kehilangan satu-satunya potensi peringatan dini yang ada pada saat itu.</p>
+
+    <div class="pullquote">
+      <p>"Tidak ada Pusat Peringatan Tsunami pada tahun 1946. Jika saja masyarakat terdidik tentang bahaya tsunami dan memahami tanda-tanda alamnya, korban jiwa di Hilo bisa diminimalkan — bahkan mungkin nol."</p>
+      <cite>— International Tsunami Information Center (ITIC), UNESCO</cite>
+    </div>
+
+    <div class="section-head">
+      <svg class="sh-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,12 C4,8 6,14 8,11 C10,8 12,14 14,11 C16,8 18,14 20,11 C21,9.5 22,10 22,10" stroke="#8b2500" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M2,17 C4,13 6,19 8,16 C10,13 12,19 14,16 C16,13 18,19 20,16 C21,14.5 22,15 22,15" stroke="#8b2500" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <line x1="12" y1="2" x2="12" y2="8" stroke="#8b2500" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/>
+        <polyline points="10,4 12,2 14,4" stroke="#8b2500" stroke-width="1.3" fill="none" stroke-linejoin="round" opacity="0.4"/>
+      </svg>
+      <h2>Empat Jam Dua Puluh Menit Menuju Hilo</h2>
+    </div>
+
+    <p>Sementara warga Hawaii masih terlelap atau baru memulai pagi mereka, gelombang tak kasat mata itu bergerak. Empat jam dua puluh menit setelah gempa, gelombang pertama memasuki Teluk Hilo di pulau Hawaii (Big Island). Bagi sebagian orang yang sudah terjaga, pemandangan pertama justru membingungkan: air di teluk seolah <em>tersedot ke belakang</em>. Dasar laut terbuka. Perahu-perahu terdampar di lumpur. Ikan-ikan menggelepar.</p>
+
+    <p>Bagi yang mengenal tanda-tanda alam, ini adalah alarm. Namun pada 1946, pemahaman tentang perilaku tsunami hampir tidak ada di kalangan masyarakat awam. Beberapa orang malah berjalan ke arah laut untuk melihat fenomena aneh itu lebih dekat.</p>
+
+    <p>Lalu gelombang kedua datang. Kali ini tidak ada keraguan.</p>
+
+    <div class="callout">
+      <div class="callout-wave-header">
+        <div class="callout-title">
+          <!-- ocean wave icon -->
+          <svg style="display:inline-block;vertical-align:middle;margin-right:0.5rem;width:16px;height:16px;opacity:0.8;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2,14 C4,10 6,16 8,13 C10,10 12,16 14,13 C16,10 18,16 20,13 C21,11.5 22,12 22,12" stroke="#c94a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M2,19 C4,15 6,21 8,18 C10,15 12,21 14,18 C16,15 18,21 20,18 C21,16.5 22,17 22,17" stroke="#c94a1a" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+          Kronologi 1 April 1946
+        </div>
+        <div class="mini-waves">
+          <svg viewBox="0 0 720 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,14 C40,4 80,22 120,14 C160,6 200,20 240,14 C280,8 320,20 360,14 C400,8 440,20 480,14 C520,8 560,20 600,14 C640,8 680,20 720,14 L720,28 L0,28 Z" fill="#1a1208" fill-opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="timeline">
+        <li>
+          <!-- earthquake icon -->
+          <div class="tl-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="2,12 5,12 7,6 9,18 11,9 13,15 15,12 19,12 22,12" stroke="#c94a1a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="timeline-time">02.29 — Kepulauan Aleutian</span>
+          Gempa M 8,6 mengguncang dasar laut dekat Pulau Unimak. Dasar laut terangkat, memicu tsunami lintas-Pasifik.
+        </li>
+        <li>
+          <!-- lighthouse icon -->
+          <div class="tl-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="10" width="6" height="12" rx="1" stroke="#c94a1a" stroke-width="1.6" fill="none"/>
+              <polygon points="8,10 12,3 16,10" stroke="#c94a1a" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+              <line x1="6" y1="22" x2="18" y2="22" stroke="#c94a1a" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="5" y1="8" x2="8" y2="9.5" stroke="#c94a1a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+              <line x1="19" y1="8" x2="16" y2="9.5" stroke="#c94a1a" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <span class="timeline-time">Beberapa menit kemudian — Unimak</span>
+          Gelombang setinggi 42 meter menghancurkan Mercusuar Scotch Cap. Lima penjaga tewas. Tidak ada sinyal peringatan yang terkirim.
+        </li>
+        <li>
+          <!-- wave icon -->
+          <div class="tl-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2,12 C4,8 6,14 8,11 C10,8 12,14 14,11 C16,8 18,14 20,11 C21,9.5 22,10 22,10" stroke="#c94a1a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path d="M2,17 C4,13 6,19 8,16 C10,13 12,19 14,16 C16,13 18,19 20,16 C21,14.5 22,15 22,15" stroke="#c94a1a" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.55"/>
+            </svg>
+          </div>
+          <span class="timeline-time">±06.49 — Pulau Kauai, Hawaii</span>
+          Gelombang pertama tiba di Kauai, 4,5 jam setelah gempa. Pabrik gula McKee dan sejumlah bangunan hancur.
+        </li>
+        <li>
+          <!-- tsunami/flood icon -->
+          <div class="tl-icon" style="background:rgba(139,37,0,0.35); border-color:rgba(201,74,26,0.8);">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1,14 C3,9 5,16 7,12 C9,8 11,16 13,12 C15,8 17,16 19,12 C21,9 23,10 23,10 L23,20 C23,21.1 22.1,22 21,22 L3,22 C1.9,22 1,21.1 1,20 Z" fill="#c94a1a" fill-opacity="0.35" stroke="#c94a1a" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="timeline-time">±07.10 — Hilo, Big Island</span>
+          Gelombang menghantam Hilo. Serangkaian 6–7 gelombang besar datang dengan interval 15–20 menit. Ketinggian gelombang rata-rata 9 meter di Hawaii.
+        </li>
+        <li>
+          <!-- globe/ocean icon -->
+          <div class="tl-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" stroke="#c94a1a" stroke-width="1.6" fill="none"/>
+              <path d="M3,12 C5,9 7,13 9,11 C11,9 13,13 15,11 C17,9 19,13 21,12" stroke="#c94a1a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <line x1="12" y1="3" x2="12" y2="21" stroke="#c94a1a" stroke-width="1" opacity="0.3"/>
+              <line x1="3" y1="12" x2="21" y2="12" stroke="#c94a1a" stroke-width="1" opacity="0.3"/>
+            </svg>
+          </div>
+          <span class="timeline-time">Siang hari — Pantai Barat AS &amp; Chile</span>
+          Efek tsunami terasa di California dan bahkan tercatat di pantai Chile, 18 jam setelah gempa awal.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section-head">
+      <svg class="sh-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,2 L22,20 L2,20 Z" stroke="#8b2500" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+        <line x1="12" y1="9" x2="12" y2="14" stroke="#8b2500" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="12" cy="17" r="1" fill="#8b2500"/>
+      </svg>
+      <h2>Lelucon yang Tidak Ada Seorang Pun yang Tertawa</h2>
+    </div>
+
+    <p>Di sinilah ironi paling pahit dari bencana ini bersemayam. Ketika gelombang pertama tiba dan beberapa warga mulai berteriak memperingatkan tetangga mereka untuk berlari ke tempat yang lebih tinggi, sebagian orang yang mendengar justru tertawa. Hari itu adalah 1 April — April Fools' Day. Peringatan tsunami? Pasti candaan.</p>
+
+    <p>Mereka yang mengabaikan peringatan itu sebagian besar tidak selamat untuk menceritakan kisah mereka.</p>
+
+    <p>Di Hilo saja, <strong>96 hingga 159 orang</strong> tewas (berbagai sumber mencatat angka berbeda tergantung cakupan wilayah yang dihitung). Seluruh wilayah Hawaii mencatat 159–173 korban jiwa. Gelombang setinggi 3 lantai bangunan menyapu kawasan pesisir. Sebanyak 488 bangunan hancur total, dan 936 bangunan lainnya rusak parah di Hilo. Di Laupahoehoe, sebuah gedung sekolah dihancurkan oleh gelombang — menewaskan seorang guru dan 25 muridnya.</p>
+
+    <div class="pullquote">
+      <p>"Ketika orang-orang menyebarkan peringatan — mempertaruhkan nyawa mereka untuk memperingatkan orang di sepanjang pantai — sebagian mengira itu adalah lelucon April Mop."</p>
+      <cite>— Ancestry.com Historical Insights, Hawaii Tsunami 1946</cite>
+    </div>
+
+    <div class="section-head">
+      <svg class="sh-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="2.5" fill="#8b2500" fill-opacity="0.6"/>
+        <ellipse cx="12" cy="12" rx="9" ry="4" stroke="#8b2500" stroke-width="1.4" fill="none"/>
+        <ellipse cx="12" cy="12" rx="9" ry="4" stroke="#8b2500" stroke-width="1.4" fill="none" transform="rotate(60 12 12)"/>
+        <ellipse cx="12" cy="12" rx="9" ry="4" stroke="#8b2500" stroke-width="1.4" fill="none" transform="rotate(120 12 12)"/>
+      </svg>
+      <h2>Anomali Ilmiah: Gempa Kecil, Tsunami Raksasa</h2>
+    </div>
+
+    <p>Para ilmuwan seismologi pun dibuat bingung oleh peristiwa 1946. Gempa ini termasuk kategori langka yang disebut <em>tsunami earthquake</em> — fenomena di mana kekuatan tsunami yang dihasilkan jauh melampaui apa yang seharusnya dimungkinkan oleh magnitudo gelombang permukaan gempa tersebut. Magnitudo gelombang permukaan (Ms) awalnya diukur hanya 7,4 — relatif "biasa" untuk ukuran Pasifik. Namun tsunami yang dihasilkannya luar biasa dahsyat.</p>
+
+    <p>Penelitian seismolog Hiroo Kanamori pada 1972 kemudian menjelaskan mekanisme ini: estimasi magnitudo momen sebenarnya jauh lebih besar, sekitar Mw 8,6. Patahan bawah laut terjadi perlahan — terlalu lambat untuk menghasilkan gelombang seismik yang kuat, namun cukup besar mengangkat kolom air laut secara masif. Sebagian energi tsunami tambahan juga diduga berasal dari longsoran bawah laut lokal yang dipicu oleh gempa tersebut.</p>
+
+    <div class="section-head">
+      <svg class="sh-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,2 L20,6 L20,13 C20,17.4 16.4,21.2 12,22 C7.6,21.2 4,17.4 4,13 L4,6 Z" stroke="#8b2500" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        <polyline points="8,12 11,15 16,9" stroke="#8b2500" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2>Warisan: Sistem yang Lahir dari Tragedi</h2>
+    </div>
+
+    <p>Tragedi 1946 tidak berlalu sia-sia. Dua tahun setelah bencana, Amerika Serikat mendirikan <em>Seismic Sea Wave Warning System</em> — sistem peringatan tsunami pertama di Pasifik. Pada 1949, sistem ini berkembang dan berganti nama menjadi <strong>Pacific Tsunami Warning Center</strong>, yang hingga hari ini menjadi tulang punggung peringatan dini tsunami bagi seluruh kawasan Pasifik dan Karibia.</p>
+
+    <p>Sistem ini pertama kali digunakan pada 4 November 1952, ketika evakuasi berhasil dilakukan meski gelombang yang diperkirakan ternyata tidak sebesar prediksi. Sebuah false alarm — tapi jauh lebih baik dari diam.</p>
+
+    <p>Hawaii sendiri menetapkan April sebagai <em>Tsunami Awareness Month</em>. Setiap tahun, peringatan itu dimulai pada tanggal 1 April — bukan sebagai lelucon, melainkan sebagai pengingat bahwa 78 tahun lalu, ketika seseorang berlari memperingatkan tetangganya tentang tsunami yang datang, terlalu banyak orang yang memilih untuk tertawa.</p>
+
+    <p>Bencana itu mengajarkan satu pelajaran yang sederhana namun mahal harganya: <strong>dalam menghadapi ancaman alam, tidak ada yang namanya candaan.</strong></p>
+
+    <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--rule);" />
+
+    <p style="font-family:'DM Sans',sans-serif; font-size:0.75rem; color:var(--muted); line-height:1.7; font-style:normal;">
+      <strong style="color:var(--ink); font-weight:500;">Sumber Utama:</strong><br>
+      Wikipedia Indonesia — <em>Gempa bumi Kepulauan Aleut 1946</em> · 
+      International Tsunami Information Center (ITIC), UNESCO · 
+      USGS / Wikipedia EN — <em>1946 Aleutian Islands Earthquake</em> · 
+      Geophysical Institute, University of Alaska Fairbanks · 
+      Hawaii Emergency Management Agency (HI-EMA) · 
+      Kanamori, H. (1972). "Mechanism of tsunami earthquakes." <em>Physics of the Earth and Planetary Interiors</em>, 6(5): 346–359.
+    </p>
+
+  </article>
+
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:60px;">
+      <path d="M0,30 C180,55 360,5 540,30 C720,55 900,5 1080,30 C1260,55 1350,15 1440,30 L1440,60 L0,60 Z" fill="#1a1208"/>
+    </svg>
+  </div>
+  <footer>
+    <strong>April Mop 1946</strong><br>
+    Artikel ini disusun berdasarkan sumber-sumber kredibel yang dapat diverifikasi.<br>
+    Data korban dan kerusakan merujuk pada USGS, ITIC UNESCO, dan Wikipedia (EN/ID).
+  </footer>
+
+</body>
+</html>
